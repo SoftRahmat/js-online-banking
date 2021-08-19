@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banking</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="text-3xl text-center mt-10 font-bold">
+        Let's get some<span class="text-yellow-500"> Money!</span>
+      </h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+      <!-- // Balance and transactrions -->
+      <section class="mt-12">
+        <div class="grid grid-cols-3 gap-4">
+          <div class="bg-blue-400 text-white p-8 rounded">
+            <h3 class="text-3xl">Deposit</h3>
+            <h4 class="text-5xl" >$<span id="deposit-total">00</span></h4>
+          </div>
+          <div class="bg-green-400 text-white p-8 rounded">
+            <h3 class="text-3xl">Withdraw</h3>
+            <h4 class="text-5xl">$<span id='withdraw-total'>00</span></h4>
+          </div>
+          <div class="bg-yellow-400 text-white p-8 rounded">
+            <h3 class="text-3xl">Balance</h3>
+            <h4 class="text-5xl">$<span id="balance-total">1000</span></h4>
+          </div>
+        </div>
+      </section>
+      <!-- Deposit and withdraw -->
+      <section class="mt-5">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-green-300 p-8 rounded">
+            <h3 class="text-3xl">Please Deposite</h3>
+            <div class="mt-4">
+              <form class="mt-5" action="">
+                <input
+                  type="text"
+                  class="
+                    border
+                    px-3
+                    py-3
+                    placeholder-gray-400
+                    w-full
+                    text-gray-700
+                    bg-white
+                    rounded
+                    text-sm
+                    shadow
+                  "
+                  name=" "
+                  id="deposit"
+                  placeholder="$ enter your amount"
+                />
+                <button
+                  class="
+                    text-white
+                    mt-3
+                    active:bg-gray-700
+                    text-sm
+                    bg-gray-900
+                    font-bold
+                    px-6
+                    py-3
+                    rounded
+                    hover:shadow-lg
+                    shadow
+                    outline-none
+                  "
+                  type="button"
+                  id="deposit-button"
+                >
+                  Deposit
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="bg-green-300 p-8 rounded">
+            <h3 class="text-3xl">Please Withdraw</h3>
+            <div class="mt-4">
+              <form class="mt-5" action="">
+                <input
+                  type="text"
+                  class="
+                    border
+                    px-3
+                    py-3
+                    placeholder-gray-400
+                    w-full
+                    text-gray-700
+                    bg-white
+                    rounded
+                    text-sm
+                    shadow
+                  "
+                  name=" "
+                  id="withdraw"
+                  placeholder="$ enter your amount"
+                />
+                <button
+                  class="
+                    text-white
+                    mt-3
+                    active:bg-gray-700
+                    text-sm
+                    bg-gray-900
+                    font-bold
+                    px-6
+                    py-3
+                    rounded
+                    hover:shadow-lg
+                    shadow
+                    outline-none
+                  "
+                  type="button"
+                  id="withdraw-button"
+                >
+                  Withdraw
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/banking.js"></script>
+  </body>
+</html>
